@@ -37,4 +37,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ---
 
-!["screenshot"](./assets//netfilm-app-screenshot.jpg)
+!["screenshot"](./assets//netfilm-app-screenshot-1.jpg)
