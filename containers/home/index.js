@@ -15,26 +15,20 @@ const HomeContainer = ({
 }) => {
   return (
     <div>
-      <FeaturedMovie movie={topRatedMovies?.[0]} />
-      <Categories categories={categories.slice(0, 5)} />
-
-      {selectedCategory.movies.length > 0 && (
+      <FeaturedMovie
+        movie={popularMovies[Math.floor(Math.random() * popularMovies.length)]}
+      />
+      <Categories categories={categories.slice(1, 6)} />
+      {!!selectedCategory.movies.length && (
         <MoviesSection
-          title={
-            categories.find((genre) => `${genre.id}` === selectedCategory.id)
-              .name
-          }
-          movies={selectedCategory.movies}
+          title={categories.find(({ id }) => id === +selectedCategory.id)?.name}
+          movies={selectedCategory.movies.slice(1, 7)}
         />
       )}
-
+      <MoviesSection title="Popular Films" movies={popularMovies.slice(1, 7)} />
       <MoviesSection
-        title="Top Rated Fılms"
+        title="Your favorites"
         movies={topRatedMovies.slice(1, 7)}
-      />
-      <MoviesSection
-        title="Popular Fılms"
-        movies={popularMovies.slice(7, 13)}
       />
     </div>
   );
