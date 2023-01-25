@@ -1,0 +1,9 @@
+.footer {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer a {
+  text-decoration: underline;
+}
