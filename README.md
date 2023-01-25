@@ -37,4 +37,75 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ---
 
+## Project Skeleton
+
+```
+|----README.md
+├── app
+│ ├── [[...category]]
+│ │ ├── loading.js
+│ │ └── page.js
+│ ├── movie/[id]
+│ │ ├── error.js
+│ │ ├── loading.js
+│ │ ├── not-found.js
+│ │ └── page.js
+│ └── loyout.jsx
+├── assets
+│   ├── netfilm-app-screenshot-1.jpg
+│   └── netfilm-app-screenshot.jpg
+├── components
+│ ├── categories
+│ │ ├── index.js
+│ │ ├── loading.js
+│ │ └── styles.module.css
+│ ├── featured-movie
+│ │ ├── index.js
+│ │ ├── loading.js
+│ │ └── styles.module.css
+│ ├── footer
+│ │ ├── index.js
+│ │ └── styles.module.css
+│ ├── header
+│ │ ├── index.js
+│ │ └── styles.module.css
+│ ├── loading
+│ │ ├── index.js
+│ │ └── styles.module.css
+│ ├── lmovie-section
+│ │ ├── index.js
+│ │ ├── loading.js
+│ │ └── styles.module.css
+│ └── skeleton
+│   ├── index.js
+│   └── styles.module.css
+├── containers
+│ ├── home
+│ │ └── index.js
+│ └── movie
+│   └── index.js
+├── mocks
+│   ├── genres.json
+│   └── movies.json
+├── public
+│ ├── favicon.ico
+│ ├── next.svg
+│ ├── thirteen.svg
+│ └── vercel.svg
+├── services
+│ └── movie.js
+├── styles
+│ ├── global.css
+│ └── reset.css
+├── .env
+├── .gitignore
+├── jsconfig.json
+├── next.config.js
+├── package-lock.json
+└── vpackage.json
+
+```
+
+---
+
 !["screenshot"](./assets//netfilm-app-screenshot-1.jpg)
